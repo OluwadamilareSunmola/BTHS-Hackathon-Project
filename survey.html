@@ -1,0 +1,175 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<title>Retirement Planning Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #073C5E;
+        margin: 0;
+        padding: 20px;
+        max-width: 95%;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .container {
+        background-color: white;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #333;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    button {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #e6e6e6;
+    }
+    button {
+        background-color: #5cb85c;
+        color: white;
+        border: 0;
+        cursor: pointer;
+    }
+    button:hover {
+        opacity: 0.9;
+    }
+    .note {
+        font-size: 0.9em;
+        color: #666;
+    }
+    .note a {
+        color: #337ab7;
+        text-decoration: none;
+    }
+    .note a:hover {
+        text-decoration: underline;
+    }
+
+        #age{    
+    background-color: #004977;
+    padding: 5px;
+    margin-top: 11.4px;
+    margin-left: 60px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-family: "Roboto Mono",monospace;
+    color: #ffffff;
+    font-size: 12px;
+    border: none;
+    width: 100%
+    outline: none;
+    border-radius: 5px;
+      
+    }
+    
+    .Golden {
+      width: 500px;
+      margin-top: 0;
+      margin-left:42px;
+      margin-right: 40px
+      padding: 0 1px 10px 10px;
+      
+    }
+    .your-age-now{
+      font-weight: thick;
+      background-color: linear-gradient(45deg,  rgba(66, 183, 245,0.8) 0%,rgba(66, 245, 189,0.4) 100%);
+      padding-top: 11px
+      
+    }
+    .submitbutton{
+      background-color: green;
+      color: white;
+    }
+    .submitbutton:hover{
+      transform: translateY(4px);
+    }
+.cares option{
+  background: #1d1f24;
+  color: white;
+  
+}
+.cares option:hover{
+  color: blue;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<img class = "Golden" src="https://i.ibb.co/vLvhvqL/thumbnail.png" alt="thumbnail">
+
+    <form>
+        <div class="form-group">
+            <label class = "your-age-now" for="age">Your Age Now</label>
+            <input type="date" id="age" name="age" min = "1920-01-01" max = "2006-31-12" required>
+        </div>
+        <div class="form-group">
+            <label for="retirement-age">Your Planned Retirement Age</label>
+            <input type="number" id="retirement-age" name="retirement-age" min = "60" max = "73" required>
+        </div>
+        <div class="form-group">
+            <label for="life-expectancy">Your Monthly Expenses</label>
+            <input type="number" id="life-expectancy" name="life-expectancy" required placeholder="$5,000">
+        </div>
+        <div class="form-group">
+            <label for="social-security">Expected Social Security Income ($/Month)</label>
+            <input type="text" id="social-security" name="social-security" placedholder = "$ ">
+            <span class="note"><a href="https://ssa.gov" target="_blank">estimate your number at SSA.gov</a></span>
+        </div>
+        <div class="form-group">
+            <label for="other-income">Other Income After Retirement ($/Month)</label>
+            <input type="text" id="other-income" name="other-income" placeholder="pension, rental property income..." required>
+        </div>
+        <div class="form-group">
+            <label for="investment-return">Average Investment Return</label>
+            <input type="text" id="investment-return" name="investment-return" placeholder="2%">
+        </div>
+        <div class="form-group">
+            <label for="inflation-rate">Inflation Rate (Annual)</label>
+            <input type="text" id="inflation-rate" name="inflation-rate" placeholder="3%">
+        </div>
+        <div class="form-group">
+            <label for="current-income">Your Current Income ($/Year)</label>
+            <input type="text" id="current-income" name="current-income">
+        </div>
+        <div class="form-group">
+            <label for="needed-income">Which Area Do You Spend The Most Money On</label>
+            <div >
+              <select class ="cares" name="cars">
+    <option value="volvo">Food</option>
+    <option value="saab">Entertainment</option>
+    <option value="fiat">Housing</option>
+    <option value="audi">Travelling</option>
+    <option value = "new1">Health Care</option>
+    <option value = "clothes">Clothing</option>
+  </select>
+            </div>
+        </div>
+        <button class = "submitbutton" type="submit">Secure your Golden Years!</button>
+    </form>
+</div>
+</body>

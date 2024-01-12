@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Years Registration Form</title>
+  <link rel="stylesheet" href="/registration.css" />
+
+</head>
+
+<body>
+    <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      background-color: #f2f2f2;
+      width: 40%;
+      margin: auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-top: 50px;
+    }
+
+    h2 {
+      background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .input-group {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .input-group label {
+      flex-basis: 45%;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    button {
+        font-family: var(--body-font);
+        font-size: var(--button-size);
+      background-color: #FFD700;
+      color: black;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    button:hover {
+      opacity: 1;
+    }
+    .primary-button {
+    font-family: var(--body-font);
+    font-size: var(--button-size);
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    border-radius: var(--standard-border-radius);
+    border: none;
+    background-color: var(--primary-accent);
+    color: var(--text-dark);
+    padding: var(--spacing-sm) var(--spacing-md);
+    transition: all 0.15s ease;
+  }
+
+ 
+</style>
+
+</body>
+
+<body>
+    <nav class="navbar">
+        <img src="GoldenYearsLogo.png" alt="Golden Years from AARPennies">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="survey.html">Survey</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="recommendations.html">Recommendations</a></li> 
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+        <div class="hamburger-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+  
+  
+        <button class="primary-button navbar-button">Sign In</button>
+    </nav>
+
+
+  <div class="form-container">
+    
+    <p>Secure your Golden Years!</p>
+    <form action="/submit_form" method="post">
+      <div class="input-group">
+        <label>
+          First Name:
+          <input type="text" name="first_name" placeholder="Enter your name..." required>
+        </label>
+        <label>
+          Last Name:
+          <input type="text" name="last_name" placeholder="Enter your name..." required>
+        </label>
+      </div>
+      <div class="input-group">
+        <label>
+          Phone Number:
+          <input type="tel" name="mobile" placeholder="+1 - " pattern="[+1]{3}-[0-9]{10}" required>
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" placeholder="info@xyz.com" required>
+        </label>
+      </div>
+      <div class="input-group">
+        <label>
+          Password:
+          <input type="password" name="password" required>
+        </label>
+        <label>
+          Confirm Password:
+          <input type="password" name="confirm_password" required>
+        </label>
+      </div>
+      
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
