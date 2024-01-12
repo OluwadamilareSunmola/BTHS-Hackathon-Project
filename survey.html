@@ -102,8 +102,10 @@
       
     }
     .submitbutton{
-      background-color: green;
-      color: white;
+      background-color: rgb(209, 156, 128);
+      color: black;
+      font-size: 17px;
+      font-family: "Roboto Mono",monospace;
     }
     .submitbutton:hover{
       transform: translateY(4px);
@@ -123,7 +125,7 @@
 
 <img class = "Golden" src="https://i.ibb.co/vLvhvqL/thumbnail.png" alt="thumbnail">
 
-    <form action="URL_of_next_page_here" method="post">
+    <form action= "./recommendations.html" method="post">
         <div class="form-group">
             <label class = "your-age-now" for="age">Your Birth Date</label>
             <input type="date" id="age" name="age" min = "1920-01-01" max = "2006-31-12" required>
@@ -170,7 +172,9 @@
   </select>
             </div>
         </div>
-        <button class = "submitbutton" type="submit">Secure your Golden Years!</button>
+        
+        <button class = "submitbutton" type="submit">Secure your Golden Years!
+        </button>
     </form>
 </div>
 </body>
