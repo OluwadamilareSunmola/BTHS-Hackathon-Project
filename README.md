@@ -15,7 +15,7 @@ Welcome to the Retirement Plan Recommendation System, an innovative web developm
 
 - **WebGL Gradient Animation**: A striking feature of the project is its WebGL-based gradient background, enhancing the visual appeal and user interaction.
 
-## Preview of Our Project
+## Demo of Our Project
 https://www.canva.com/design/DAF54JtOuno/A-H8PsoeCru72qmI3nT1rA/edit?utm_content=DAF54JtOuno&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ## Usage and Interaction
